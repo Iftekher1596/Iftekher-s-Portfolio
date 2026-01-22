@@ -6,8 +6,8 @@
 
 body {
     font-family: system-ui, -apple-system, sans-serif;
-    color: #111;
-    background: #ffa53e;
+    color: #F1F2ED;
+    background: #0C3C01;
     min-height: 100vh;
     line-height: 1.6;
 }
@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%;
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.059);
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
@@ -25,7 +25,7 @@ header {
 }
 
 header h3 {
-    color: rgb(0, 0, 0);
+    color: rgb(197, 245, 188);
     font-size: 1.6rem;
 }
 
@@ -40,7 +40,7 @@ nav ul {
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: rgb(206, 255, 201);
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
@@ -49,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff8800;
+    color: rgb(0,0,0) ;
 }
 
 .home {
@@ -81,7 +81,7 @@ nav a:hover {
     display: inline-block;
     padding: 0.9rem 1.8rem;
     background: rgb(255, 247, 247);
-    color: #ffa53e;
+    color:  #0C3C01;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
