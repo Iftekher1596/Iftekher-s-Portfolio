@@ -32,13 +32,19 @@ header h3 {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
     transition: color 0.3s;
 }
 
@@ -122,7 +128,7 @@ nav a:hover {
 }
 
 #about h2 {
-  font-size: 32px;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 .project-card {
@@ -134,6 +140,57 @@ nav a:hover {
     padding: 1.8rem;
     margin-bottom: 2.5rem;
     transition: transform 0.3s;
+}
+.skills-grid {
+    display: flex;                    
+    flex-wrap: nowrap;                
+    justify-content: center;          
+    gap: 1.8rem;
+    max-width: 1100px;
+    margin: 3rem auto 1rem;
+    overflow-x: auto;                
+    padding-bottom: 1rem;            
+}
+
+.skill-card {
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 1.8rem 1.4rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    flex: 0 0 160px;                  
+    min-width: 140px;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.28);
+}
+
+.skill-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: white;
+}
+
+/* On very small screens — still one row but scrollable */
+@media (max-width: 900px) {
+    .skills-grid {
+        justify-content: flex-start;
+        padding: 0 1rem 1rem;
+    }
+    
+    .skill-card {
+        flex: 0 0 150px;
+    }
 }
 
 .project-card:hover {
@@ -219,5 +276,27 @@ footer {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
+    }
+}
+@media (max-width: 1100px) {
+    nav ul {
+        gap: 1rem;
+    }
+    
+    nav a {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        padding: 1.2rem 5%;
+        gap: 1rem;
+    }
+    
+    nav ul {
+        justify-content: center;
+        gap: 1.2rem;
     }
 }
